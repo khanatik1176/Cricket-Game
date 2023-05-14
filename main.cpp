@@ -4393,6 +4393,11 @@ void KeyboardInput(unsigned char key, int x, int y)
     }
       else if(key=='g')
     {
+	score1=0; 		//reset score
+        score2=0;
+        score3=0;
+        score=score1+score2+score3;
+	      
         counter= 1;
         GameMenu_sound();
         //glutPostRedisplay();
@@ -4428,6 +4433,11 @@ void KeyboardInput(unsigned char key, int x, int y)
     }
     else if(key=='t')
     {
+	score1=0; 		//reset score
+        score2=0;
+        score3=0;
+        score=score1+score2+score3;
+	    
         counter=9;
           Field_sound();
     }
